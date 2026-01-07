@@ -407,6 +407,32 @@ window.addEventListener('resize', () => {
     }
 });
 
+/* ============================================
+   BOUTON SCROLL TO TOP
+   ============================================ */
+
+const scrollToTopBtn = document.getElementById('scrollToTop');
+
+// Afficher/masquer le bouton selon le scroll
+function toggleScrollToTop() {
+    if (window.pageYOffset > 300) {
+        scrollToTopBtn.classList.add('visible');
+    } else {
+        scrollToTopBtn.classList.remove('visible');
+    }
+}
+
+// Écouter le scroll
+window.addEventListener('scroll', toggleScrollToTop);
+
+// Fonction pour remonter en haut
+scrollToTopBtn.addEventListener('click', () => {
+    window.scrollTo({
+        top: 0,
+        behavior: 'smooth'
+    });
+});
+
 // Animation initiale au chargement
 window.addEventListener('load', () => {
     document.body.style.opacity = '0';

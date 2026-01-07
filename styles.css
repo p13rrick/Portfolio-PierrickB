@@ -376,6 +376,16 @@ body {
     background: radial-gradient(circle, var(--color-primary), transparent);
     opacity: 0.3;
     animation: rotate 20s linear infinite;
+    z-index: 1;
+}
+
+.hero-image {
+    position: relative;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    border-radius: var(--radius-lg);
+    z-index: 2;
 }
 
 @keyframes floatCard {
@@ -1221,6 +1231,73 @@ body {
     .floating-card {
         width: 250px;
         height: 300px;
+    }
+}
+
+/* ============================================
+   BOUTON SCROLL TO TOP
+   ============================================ */
+
+.scroll-to-top {
+    position: fixed;
+    bottom: var(--spacing-md);
+    right: var(--spacing-md);
+    width: 50px;
+    height: 50px;
+    background: linear-gradient(135deg, var(--color-primary), var(--color-secondary));
+    border: none;
+    border-radius: var(--radius-full);
+    color: var(--color-white);
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    opacity: 0;
+    visibility: hidden;
+    transform: translateY(20px);
+    transition: all var(--transition-base);
+    z-index: 999;
+    box-shadow: var(--shadow-glow);
+    backdrop-filter: blur(10px);
+}
+
+.scroll-to-top.visible {
+    opacity: 1;
+    visibility: visible;
+    transform: translateY(0);
+}
+
+.scroll-to-top:hover {
+    transform: translateY(-5px);
+    box-shadow: var(--shadow-glow-strong);
+    background: linear-gradient(135deg, var(--color-primary-light), var(--color-secondary-light));
+}
+
+.scroll-to-top:active {
+    transform: translateY(-2px) scale(0.95);
+}
+
+.scroll-to-top svg {
+    width: 24px;
+    height: 24px;
+    transition: transform var(--transition-base);
+}
+
+.scroll-to-top:hover svg {
+    transform: translateY(-2px);
+}
+
+@media (max-width: 768px) {
+    .scroll-to-top {
+        width: 45px;
+        height: 45px;
+        bottom: var(--spacing-sm);
+        right: var(--spacing-sm);
+    }
+    
+    .scroll-to-top svg {
+        width: 20px;
+        height: 20px;
     }
 }
 
