@@ -1,0 +1,473 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Portfolio personnel - Développeur & Designer créatif">
+    <title>Portfolio | Développeur & Designer</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&family=Space+Grotesk:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <!-- Curseur personnalisé -->
+    <div class="cursor"></div>
+    <div class="cursor-follower"></div>
+
+    <!-- Navigation -->
+    <nav class="navbar" id="navbar">
+        <div class="nav-container">
+            <div class="nav-logo">
+                <a href="#home" class="logo-link">
+                    <span class="logo-text">Portfolio</span>
+                </a>
+            </div>
+            <ul class="nav-menu" id="navMenu">
+                <li class="nav-item">
+                    <a href="#home" class="nav-link" data-section="home">Accueil</a>
+                </li>
+                <li class="nav-item">
+                    <a href="#about" class="nav-link" data-section="about">À propos</a>
+                </li>
+                <li class="nav-item">
+                    <a href="#projects" class="nav-link" data-section="projects">Projets</a>
+                </li>
+                <li class="nav-item">
+                    <a href="#skills" class="nav-link" data-section="skills">Compétences</a>
+                </li>
+                <li class="nav-item">
+                    <a href="#contact" class="nav-link" data-section="contact">Contact</a>
+                </li>
+            </ul>
+            <button class="nav-toggle" id="navToggle" aria-label="Toggle navigation">
+                <span></span>
+                <span></span>
+                <span></span>
+            </button>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section id="home" class="hero">
+        <div class="hero-background">
+            <div class="gradient-orb orb-1"></div>
+            <div class="gradient-orb orb-2"></div>
+            <div class="gradient-orb orb-3"></div>
+        </div>
+        <div class="hero-content">
+            <div class="hero-text">
+                <h1 class="hero-title">
+                    <span class="title-line" data-animation="fade-up" data-delay="0">Créateur</span>
+                    <span class="title-line" data-animation="fade-up" data-delay="100">Digital</span>
+                </h1>
+                <p class="hero-subtitle" data-animation="fade-up" data-delay="200">
+                    Développeur & Designer passionné par l'innovation et l'esthétique moderne
+                </p>
+                <div class="hero-buttons" data-animation="fade-up" data-delay="300">
+                    <a href="#projects" class="btn btn-primary">Voir mes projets</a>
+                    <a href="#contact" class="btn btn-secondary">Me contacter</a>
+                </div>
+            </div>
+            <div class="hero-visual" data-animation="fade-in" data-delay="400">
+                <div class="floating-card">
+                    <div class="card-glow"></div>
+                </div>
+            </div>
+        </div>
+        <div class="scroll-indicator">
+            <div class="scroll-line"></div>
+            <span>Scroll</span>
+        </div>
+    </section>
+
+    <!-- À propos Section -->
+    <section id="about" class="about section">
+        <div class="container">
+            <div class="section-header" data-animation="fade-up">
+                <span class="section-label">À propos</span>
+                <h2 class="section-title">Qui suis-je ?</h2>
+            </div>
+            <div class="about-content">
+                <div class="about-text" data-animation="fade-right">
+                    <p class="about-intro">
+                        Passionné par le design et le développement, je crée des expériences digitales 
+                        qui allient esthétique moderne et performance technique.
+                    </p>
+                    <p>
+                        Mon approche combine une attention méticuleuse aux détails visuels avec une 
+                        expertise technique solide. Je transforme des concepts créatifs en interfaces 
+                        fluides et interactives qui captivent et engagent les utilisateurs.
+                    </p>
+                    <p>
+                        Toujours à l'affût des dernières tendances et technologies, je cherche 
+                        constamment à repousser les limites du possible dans le domaine du web design.
+                    </p>
+                    <div class="about-stats">
+                        <div class="stat-item">
+                            <div class="stat-number" data-target="50">0</div>
+                            <div class="stat-label">Projets réalisés</div>
+                        </div>
+                        <div class="stat-item">
+                            <div class="stat-number" data-target="5">0</div>
+                            <div class="stat-label">Années d'expérience</div>
+                        </div>
+                        <div class="stat-item">
+                            <div class="stat-number" data-target="100">0</div>
+                            <div class="stat-label">Clients satisfaits</div>
+                        </div>
+                    </div>
+                </div>
+                <div class="about-image" data-animation="fade-left">
+                    <div class="image-wrapper">
+                        <div class="image-glow"></div>
+                        <div class="placeholder-image">
+                            <span>Photo</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Projets Section -->
+    <section id="projects" class="projects section">
+        <div class="container">
+            <div class="section-header" data-animation="fade-up">
+                <span class="section-label">Projets</span>
+                <h2 class="section-title">Réalisations récentes</h2>
+            </div>
+            <div class="projects-grid">
+                <article class="project-card" data-animation="fade-up" data-delay="0">
+                    <div class="project-image">
+                        <div class="project-overlay">
+                            <div class="project-info">
+                                <h3 class="project-title">Application E-commerce</h3>
+                                <p class="project-description">
+                                    Plateforme moderne avec interface intuitive et système de paiement sécurisé
+                                </p>
+                                <div class="project-tags">
+                                    <span class="tag">React</span>
+                                    <span class="tag">Node.js</span>
+                                    <span class="tag">MongoDB</span>
+                                </div>
+                                <a href="#" class="project-link">Voir le projet →</a>
+                            </div>
+                        </div>
+                        <div class="project-thumbnail project-1"></div>
+                    </div>
+                </article>
+
+                <article class="project-card" data-animation="fade-up" data-delay="100">
+                    <div class="project-image">
+                        <div class="project-overlay">
+                            <div class="project-info">
+                                <h3 class="project-title">Dashboard Analytics</h3>
+                                <p class="project-description">
+                                    Interface de visualisation de données avec graphiques interactifs en temps réel
+                                </p>
+                                <div class="project-tags">
+                                    <span class="tag">Vue.js</span>
+                                    <span class="tag">D3.js</span>
+                                    <span class="tag">API REST</span>
+                                </div>
+                                <a href="#" class="project-link">Voir le projet →</a>
+                            </div>
+                        </div>
+                        <div class="project-thumbnail project-2"></div>
+                    </div>
+                </article>
+
+                <article class="project-card" data-animation="fade-up" data-delay="200">
+                    <div class="project-image">
+                        <div class="project-overlay">
+                            <div class="project-info">
+                                <h3 class="project-title">Site Portfolio Artistique</h3>
+                                <p class="project-description">
+                                    Portfolio immersif avec animations 3D et navigation innovante
+                                </p>
+                                <div class="project-tags">
+                                    <span class="tag">Three.js</span>
+                                    <span class="tag">GSAP</span>
+                                    <span class="tag">WebGL</span>
+                                </div>
+                                <a href="#" class="project-link">Voir le projet →</a>
+                            </div>
+                        </div>
+                        <div class="project-thumbnail project-3"></div>
+                    </div>
+                </article>
+
+                <article class="project-card" data-animation="fade-up" data-delay="300">
+                    <div class="project-image">
+                        <div class="project-overlay">
+                            <div class="project-info">
+                                <h3 class="project-title">Application Mobile</h3>
+                                <p class="project-description">
+                                    Application native iOS/Android avec design system cohérent
+                                </p>
+                                <div class="project-tags">
+                                    <span class="tag">React Native</span>
+                                    <span class="tag">TypeScript</span>
+                                    <span class="tag">Firebase</span>
+                                </div>
+                                <a href="#" class="project-link">Voir le projet →</a>
+                            </div>
+                        </div>
+                        <div class="project-thumbnail project-4"></div>
+                    </div>
+                </article>
+            </div>
+        </div>
+    </section>
+
+    <!-- Compétences Section -->
+    <section id="skills" class="skills section">
+        <div class="container">
+            <div class="section-header" data-animation="fade-up">
+                <span class="section-label">Compétences</span>
+                <h2 class="section-title">Expertise technique</h2>
+            </div>
+            <div class="skills-content">
+                <div class="skills-category" data-animation="fade-up" data-delay="0">
+                    <h3 class="category-title">Frontend</h3>
+                    <div class="skills-list">
+                        <div class="skill-item">
+                            <div class="skill-header">
+                                <span class="skill-name">HTML / CSS</span>
+                                <span class="skill-level">95%</span>
+                            </div>
+                            <div class="skill-bar">
+                                <div class="skill-progress" data-width="95"></div>
+                            </div>
+                        </div>
+                        <div class="skill-item">
+                            <div class="skill-header">
+                                <span class="skill-name">JavaScript</span>
+                                <span class="skill-level">90%</span>
+                            </div>
+                            <div class="skill-bar">
+                                <div class="skill-progress" data-width="90"></div>
+                            </div>
+                        </div>
+                        <div class="skill-item">
+                            <div class="skill-header">
+                                <span class="skill-name">React / Vue</span>
+                                <span class="skill-level">85%</span>
+                            </div>
+                            <div class="skill-bar">
+                                <div class="skill-progress" data-width="85"></div>
+                            </div>
+                        </div>
+                        <div class="skill-item">
+                            <div class="skill-header">
+                                <span class="skill-name">TypeScript</span>
+                                <span class="skill-level">80%</span>
+                            </div>
+                            <div class="skill-bar">
+                                <div class="skill-progress" data-width="80"></div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="skills-category" data-animation="fade-up" data-delay="100">
+                    <h3 class="category-title">Design</h3>
+                    <div class="skills-list">
+                        <div class="skill-item">
+                            <div class="skill-header">
+                                <span class="skill-name">UI / UX Design</span>
+                                <span class="skill-level">92%</span>
+                            </div>
+                            <div class="skill-bar">
+                                <div class="skill-progress" data-width="92"></div>
+                            </div>
+                        </div>
+                        <div class="skill-item">
+                            <div class="skill-header">
+                                <span class="skill-name">Figma / Sketch</span>
+                                <span class="skill-level">88%</span>
+                            </div>
+                            <div class="skill-bar">
+                                <div class="skill-progress" data-width="88"></div>
+                            </div>
+                        </div>
+                        <div class="skill-item">
+                            <div class="skill-header">
+                                <span class="skill-name">Motion Design</span>
+                                <span class="skill-level">85%</span>
+                            </div>
+                            <div class="skill-bar">
+                                <div class="skill-progress" data-width="85"></div>
+                            </div>
+                        </div>
+                        <div class="skill-item">
+                            <div class="skill-header">
+                                <span class="skill-name">Prototypage</span>
+                                <span class="skill-level">90%</span>
+                            </div>
+                            <div class="skill-bar">
+                                <div class="skill-progress" data-width="90"></div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="skills-category" data-animation="fade-up" data-delay="200">
+                    <h3 class="category-title">Backend & Tools</h3>
+                    <div class="skills-list">
+                        <div class="skill-item">
+                            <div class="skill-header">
+                                <span class="skill-name">Node.js</span>
+                                <span class="skill-level">75%</span>
+                            </div>
+                            <div class="skill-bar">
+                                <div class="skill-progress" data-width="75"></div>
+                            </div>
+                        </div>
+                        <div class="skill-item">
+                            <div class="skill-header">
+                                <span class="skill-name">Git / GitHub</span>
+                                <span class="skill-level">90%</span>
+                            </div>
+                            <div class="skill-bar">
+                                <div class="skill-progress" data-width="90"></div>
+                            </div>
+                        </div>
+                        <div class="skill-item">
+                            <div class="skill-header">
+                                <span class="skill-name">Docker</span>
+                                <span class="skill-level">70%</span>
+                            </div>
+                            <div class="skill-bar">
+                                <div class="skill-progress" data-width="70"></div>
+                            </div>
+                        </div>
+                        <div class="skill-item">
+                            <div class="skill-header">
+                                <span class="skill-name">CI/CD</span>
+                                <span class="skill-level">75%</span>
+                            </div>
+                            <div class="skill-bar">
+                                <div class="skill-progress" data-width="75"></div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact" class="contact section">
+        <div class="container">
+            <div class="section-header" data-animation="fade-up">
+                <span class="section-label">Contact</span>
+                <h2 class="section-title">Travaillons ensemble</h2>
+                <p class="section-description">
+                    Vous avez un projet en tête ? N'hésitez pas à me contacter pour discuter de vos idées.
+                </p>
+            </div>
+            <div class="contact-content">
+                <div class="contact-info" data-animation="fade-right">
+                    <div class="contact-item">
+                        <div class="contact-icon">
+                            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                <path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"></path>
+                                <polyline points="22,6 12,13 2,6"></polyline>
+                            </svg>
+                        </div>
+                        <div class="contact-details">
+                            <h3>Email</h3>
+                            <a href="mailto:contact@portfolio.com">contact@portfolio.com</a>
+                        </div>
+                    </div>
+                    <div class="contact-item">
+                        <div class="contact-icon">
+                            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                <path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92z"></path>
+                            </svg>
+                        </div>
+                        <div class="contact-details">
+                            <h3>Téléphone</h3>
+                            <a href="tel:+33123456789">+33 1 23 45 67 89</a>
+                        </div>
+                    </div>
+                    <div class="contact-item">
+                        <div class="contact-icon">
+                            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                <path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"></path>
+                                <circle cx="12" cy="10" r="3"></circle>
+                            </svg>
+                        </div>
+                        <div class="contact-details">
+                            <h3>Localisation</h3>
+                            <p>Paris, France</p>
+                        </div>
+                    </div>
+                    <div class="social-links">
+                        <a href="#" class="social-link" aria-label="LinkedIn">
+                            <svg viewBox="0 0 24 24" fill="currentColor">
+                                <path d="M19 0h-14c-2.761 0-5 2.239-5 5v14c0 2.761 2.239 5 5 5h14c2.762 0 5-2.239 5-5v-14c0-2.761-2.238-5-5-5zm-11 19h-3v-11h3v11zm-1.5-12.268c-.966 0-1.75-.79-1.75-1.764s.784-1.764 1.75-1.764 1.75.79 1.75 1.764-.783 1.764-1.75 1.764zm13.5 12.268h-3v-5.604c0-3.368-4-3.113-4 0v5.604h-3v-11h3v1.765c1.396-2.586 7-2.777 7 2.476v6.759z"/>
+                            </svg>
+                        </a>
+                        <a href="#" class="social-link" aria-label="GitHub">
+                            <svg viewBox="0 0 24 24" fill="currentColor">
+                                <path d="M12 0c-6.626 0-12 5.373-12 12 0 5.302 3.438 9.8 8.207 11.387.599.111.793-.261.793-.577v-2.234c-3.338.726-4.033-1.416-4.033-1.416-.546-1.387-1.333-1.756-1.333-1.756-1.089-.745.083-.729.083-.729 1.205.084 1.839 1.237 1.839 1.237 1.07 1.834 2.807 1.304 3.492.997.107-.775.418-1.305.762-1.604-2.665-.305-5.467-1.334-5.467-5.931 0-1.311.469-2.381 1.236-3.221-.124-.303-.535-1.524.117-3.176 0 0 1.008-.322 3.301 1.23.957-.266 1.983-.399 3.003-.404 1.02.005 2.047.138 3.006.404 2.291-1.552 3.297-1.23 3.297-1.23.653 1.653.242 2.874.118 3.176.77.84 1.235 1.911 1.235 3.221 0 4.609-2.807 5.624-5.479 5.921.43.372.823 1.102.823 2.222v3.293c0 .319.192.694.801.576 4.765-1.589 8.199-6.086 8.199-11.386 0-6.627-5.373-12-12-12z"/>
+                            </svg>
+                        </a>
+                        <a href="#" class="social-link" aria-label="Dribbble">
+                            <svg viewBox="0 0 24 24" fill="currentColor">
+                                <path d="M12 0C5.374 0 0 5.373 0 12s5.374 12 12 12 12-5.373 12-12S18.626 0 12 0zm6.344 4.651c1.782 1.783 2.931 4.228 3.243 6.832-1.287-.773-2.926-1.135-4.494-1.135-1.19 0-2.38.237-3.493.711-.146-.277-.297-.552-.453-.824 1.599-1.449 3.519-2.38 5.597-2.929.197-.054.391-.11.602-.155zm-4.892 1.9c.15.272.295.547.435.825-1.35.61-2.652 1.429-3.852 2.424-1.093-2.035-2.407-3.938-3.901-5.664 1.6-1.3 3.6-2.1 5.7-2.4.3.9.6 1.9.8 2.9.3.3.6.6.8.9zm-5.344-.1c1.4 1.6 2.6 3.4 3.6 5.3-1.8 1-3.6 1.7-5.5 2.1.1-1.6.6-3.1 1.4-4.5.3-.5.7-1 1.1-1.4.2-.2.3-.4.4-.5zm-3.1 6.2c1.8-.3 3.5-1 5.1-1.9.1.2.2.4.3.6.1.2.2.4.3.6-1.5.9-3.1 1.7-4.7 2.4-.2-1.6-.1-3.2.1-4.7zm.9 5.5c1.5-.7 3-1.5 4.4-2.4.2.3.4.6.6.9.2.3.4.6.5.9-1.7 1.2-3.6 2-5.5 2.5-.1-1.6.1-3.2.4-4.7zm5.1 2.8c1.8-1.2 3.4-2.6 4.7-4.1.1-.1.2-.2.3-.3.1-.1.2-.2.3-.3 1.1 1.1 2 2.3 2.7 3.6-1.6.6-3.3 1-5 1.1-.4-.5-.8-1-1.1-1.5-.1-.1-.2-.2-.3-.3-.1-.1-.2-.2-.3-.3zm6.1-1.1c-.7-1.3-1.6-2.5-2.7-3.6.1-.1.2-.2.3-.3.1-.1.2-.2.3-.3 1.3 1.5 2.9 2.9 4.7 4.1-.3 1.5-.5 3.1-.4 4.7-1.7-.1-3.4-.5-5-1.1zm3.1-6.2c-1.6-.4-3.3-1.1-5.1-1.9.2-1.5.3-3.1.1-4.7 1.6.3 3.2.6 4.7 1.1.1.1.2.2.3.3.1.1.2.2.3.3.8 1.4 1.3 2.9 1.4 4.5z"/>
+                            </svg>
+                        </a>
+                        <a href="#" class="social-link" aria-label="Twitter">
+                            <svg viewBox="0 0 24 24" fill="currentColor">
+                                <path d="M23.953 4.57a10 10 0 01-2.825.775 4.958 4.958 0 002.163-2.723c-.951.555-2.005.959-3.127 1.184a4.92 4.92 0 00-8.384 4.482C7.69 8.095 4.067 6.13 1.64 3.162a4.822 4.822 0 00-.666 2.475c0 1.71.87 3.213 2.188 4.096a4.904 4.904 0 01-2.228-.616v.06a4.923 4.923 0 003.946 4.827 4.996 4.996 0 01-2.212.085 4.936 4.936 0 004.604 3.417 9.867 9.867 0 01-6.102 2.105c-.39 0-.779-.023-1.17-.067a13.995 13.995 0 007.557 2.209c9.053 0 13.998-7.496 13.998-13.985 0-.21 0-.42-.015-.63A9.935 9.935 0 0024 4.59z"/>
+                            </svg>
+                        </a>
+                    </div>
+                </div>
+
+                <form class="contact-form" data-animation="fade-left" id="contactForm">
+                    <div class="form-group">
+                        <input type="text" id="name" name="name" class="form-input" placeholder=" " required>
+                        <label for="name" class="form-label">Nom</label>
+                    </div>
+                    <div class="form-group">
+                        <input type="email" id="email" name="email" class="form-input" placeholder=" " required>
+                        <label for="email" class="form-label">Email</label>
+                    </div>
+                    <div class="form-group">
+                        <input type="text" id="subject" name="subject" class="form-input" placeholder=" " required>
+                        <label for="subject" class="form-label">Sujet</label>
+                    </div>
+                    <div class="form-group">
+                        <textarea id="message" name="message" class="form-input form-textarea" placeholder=" " rows="5" required></textarea>
+                        <label for="message" class="form-label">Message</label>
+                    </div>
+                    <button type="submit" class="btn btn-primary btn-submit">
+                        <span>Envoyer le message</span>
+                        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                            <line x1="22" y1="2" x2="11" y2="13"></line>
+                            <polyline points="22 2 15 22 11 13 2 9 22 2"></polyline>
+                        </svg>
+                    </button>
+                </form>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <p>&copy; 2024 Portfolio. Tous droits réservés.</p>
+                <p class="footer-made">Fait avec <span class="heart">♥</span> et passion</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
